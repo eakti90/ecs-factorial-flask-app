@@ -1,0 +1,52 @@
+{
+    "containerDefinitions": [
+        {
+            "name": "web",
+            "image": "131852824746.dkr.ecr.eu-central-1.amazonaws.com/container-stack-containerisedapprepository181f38df-qmk6dzgbaa3p:latest",
+            "cpu": 0,
+            "links": [],
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "entryPoint": [],
+            "command": [],
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "secrets": [],
+            "dnsServers": [],
+            "dnsSearchDomains": [],
+            "extraHosts": [],
+            "dockerSecurityOptions": [],
+            "dockerLabels": {},
+            "ulimits": [],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "ContainerisedAppFargateServiceTaskDefwebLogGroupE53B63B1",
+                    "awslogs-region": "eu-central-1",
+                    "awslogs-stream-prefix": "Containerised-App-Fargate-Service"
+                },
+                "secretOptions": []
+            },
+            "systemControls": []
+        }
+    ],
+    "family": "cdkcontainerstackContainerisedAppFargateServiceTaskDef9C315E93",
+    "taskRoleArn": "arn:aws:iam::131852824746:role/ContainerisedAppFargateServiceTaskDefTaskRoleE758F423",
+    "executionRoleArn": "arn:aws:iam::131852824746:role/ContainerisedAppFargateServiceTaskDefExecutionRole00B1B46B",
+    "networkMode": "awsvpc",
+    "volumes": [],
+    "placementConstraints": [],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512"
+}
